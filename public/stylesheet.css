@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.main {
+    height: 100vh;
+    display: flex;
+}
+
+.mainContent {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatSide {
+    flex: 0.2
+}
+
+.Videos {
+    flex-grow: 1;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    overflow: scroll;
+}
+
+video:hover{
+    border: ridge;
+    border-color: antiquewhite;
+}
+
+.Controls {
+    background-color: #1C1E20;
+}
+
+.chatSide {
+    background-color: #242324;
+    border-left: 1px solid #3D3D42;
+}
+
+.Controls {
+    color: #D2D2D2;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.Controls__block {
+    display: flex;
+}
+
+.Controls__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.Controls__button:hover {
+    background-color: #343434;
+    border-radius: 5px;
+}
+
+.Controls__button i {
+    font-size: 24px;
+}
+
+.chatSide {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__header {
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.ChattersContainer {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.messages{
+    color: white;
+    list-style: none;
+}
+
+.messageContainer {
+    padding: 22px 12px;
+    display: flex;
+}
+
+.messageContainer input {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    color: #F5F5F5;
+}
+
+.unmute, .stop {
+    color: #CC3B33;
+}
+
+.CollapseF {
+    position: absolute;
+    margin-left: auto;
+    cursor: pointer;
+}
